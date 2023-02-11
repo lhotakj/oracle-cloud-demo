@@ -1,4 +1,5 @@
-FROM alexberkovich/alpine-anaconda3:latest
+#FROM alexberkovich/alpine-anaconda3:latest
+FROM python:alpine3.17
 LABEL maintainer="lhotakj@gmail.com"
 COPY . /app
 WORKDIR /app
