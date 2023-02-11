@@ -1,6 +1,6 @@
-name: learn-github-actions
+name: "build, push ARM docker image and deploy on Oracle cloud"
 
-run-name: ${{ github.actor }} is learning GitHub Actions
+run-name: "Build, push ARM docker image and deploy on Oracle cloud"
 
 on: [push]
 
