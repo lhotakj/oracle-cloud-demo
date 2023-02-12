@@ -1,5 +1,5 @@
 ARG IMAGE=python:3.11.1-alpine3.17
-FROM remote-docker.artifactory.dbgcloud.io/$IMAGE
+FROM $IMAGE
 
 # FROM alexberkovich/alpine-anaconda3:latest
 
