@@ -2,7 +2,7 @@ name: "build, push ARM docker image and deploy on Oracle cloud"
 
 run-name: "Build, push ARM docker image and deploy on Oracle cloud"
 
-on: [push]
+on: [ push ]
 
 jobs:
   build-docker-images:
