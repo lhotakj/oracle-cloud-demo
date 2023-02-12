@@ -41,5 +41,7 @@ jobs:
           port: 22
           script: |
             cd /tmp
-            echo :: Running docker-compose
-            docker-compose -f docker-compose.yaml up -d --build
+            echo :: Killing docker compose
+            sudo docker-compose kill --remove-orphans
+            echo :: Starting docker compose
+            sudo docker-compose -f docker-compose.yaml up -d --build
