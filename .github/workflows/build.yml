@@ -28,6 +28,7 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           username: ubuntu
           port: 22
+          overwrite: true
           source: "docker-compose.yaml,nginx"
           target: "/tmp/"
 
