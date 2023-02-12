@@ -1,6 +1,6 @@
-name: "build, push ARM docker image and deploy on Oracle cloud"
+name: "build, push ARM docker image and deploy to Oracle cloud"
 
-run-name: "Build, push ARM docker image and deploy on Oracle cloud"
+run-name: "Build, push ARM docker image and deploy to Oracle cloud"
 
 on: [ push ]
 
