@@ -28,8 +28,8 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           username: ubuntu
           port: 22
-          source: "docker-compose.yaml"
-          target: "/tmp/docker-compose.yaml"
+          source: "docker-compose.yaml,nginx"
+          target: "/tmp/"
 
       - name: Deployment on Oracle host
         uses: appleboy/ssh-action@master
