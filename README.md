@@ -2,7 +2,7 @@
 
 Demo of hosting a docker on oracle cloud (free)
 
-Start:
+Deployment:
 ```
 docker-compose -f docker-compose.yaml up -d --build
 ```
