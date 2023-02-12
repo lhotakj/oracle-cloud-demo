@@ -20,3 +20,14 @@ jobs:
         run: echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
       - name: "Build & Push Docker image"
         run: docker buildx build -t ghcr.io/${{ github.repository_owner }}/demo:latest -f ./Dockerfile --push --platform=linux/arm64,linux/amd64 .
+
+      - name: Deployment on Oracle host
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.DEPLOY_TARGET }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          username: ubuntu
+          port: 22
+          script: |
+            ls -al
+            whoami
